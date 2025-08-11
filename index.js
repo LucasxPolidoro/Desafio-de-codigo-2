@@ -1,10 +1,15 @@
-function verificarFrete(valorCompra) {
+// TODO: Crie a Função calcularFrete()
+function calcularFrete() {
+  // Lê o valor total da compra usando "gets"
+  let valorCompra = parseFloat(gets().trim());
+
+  // TODO: Crie a condição para verificar se o valor total ultrapassou R$ 150.00:
   if (valorCompra > 150.00) {
-    return "Você ganhou frete grátis!";
+    console.log("Você ganhou frete grátis!");
   } else {
-    return "Frete não incluso.";
+    console.log("Frete não incluso.");
   }
 }
 
-// 🧪 Exemplos de teste
-console.log(verificarFrete(150.01)); // Você ganhou frete grátis!
+// Chama a função para calcular o frete
+calcularFrete();
